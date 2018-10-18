@@ -11,7 +11,7 @@ both `antelope` and `antelopes`.)
 
     antelopes rock out
 
-Answer:
+Answer:  antelopes? rocks? out
 
 * Regex that matches either of:
 
@@ -72,6 +72,10 @@ Answer: [\d]{1-4}-[\d]{1,2}-[\d]{1,2}
     cursor position should accept any digits for the row and column. The
     bold sequence need only accept `1` (and is a trivial regex). (ESC is
     a single character which can be represented with `\e` in the regex.)
+
+Answers:  [A-z]|[0-9]|;
+          \e[[0-9]
+
 
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
